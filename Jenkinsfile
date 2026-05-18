@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/abhinavrohitasr/DevopsDemo/blob/main/helloWorld.java'
+                git branch: 'main', url: 'https://github.com/abhinavrohitasr/DevopsDemo.git'
             }
         }
         stage('Docker Build') {
