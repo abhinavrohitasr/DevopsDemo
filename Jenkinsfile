@@ -8,12 +8,12 @@ pipeline {
         }
         stage('Docker Build') {
             steps {
-                sh 'docker build -t helloWorld-java .'
+                sh 'docker build -t helloworld-java .'
             }
         }
         stage('Run Container') {
             steps {
-                sh 'docker run -d -p 8080:8080 --name helloWorld helloWorld-java'
+                sh 'docker run -d -p 8080:8080 --name helloworld helloworld-java'
             }
         }
     }
